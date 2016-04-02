@@ -1,7 +1,7 @@
 import java.util.Calendar;
 
 /**
- * Clock test.
+ * Clock test: what time of the day has the most segments on a 7-segment-24h-clock?
  */
 public class ClockTest {
     static final int HAD = 60 * 24;
