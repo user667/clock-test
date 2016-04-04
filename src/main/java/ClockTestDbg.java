@@ -11,7 +11,7 @@ public class ClockTestDbg extends ClockTest {
         final long start = calendar.getTimeInMillis();
         int max = 0;
         String maxStr = "";
-        for (int i = 0; i < HAD; i++) {
+        for (int i = 0; i < MAD; i++) {
             calendar.add(Calendar.MINUTE, 1);
             final int hour = calendar.get(Calendar.HOUR);
             final int min = calendar.get(Calendar.MINUTE);
