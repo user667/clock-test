@@ -4,7 +4,7 @@ import java.util.Calendar;
  * Clock test: what time of the day has the most segments on a 7-segment-24h-clock?
  */
 public class ClockTest {
-    protected static final int HAD = 60 * 24; // Hours a day
+    protected static final int MAD = 60 * 24; // Minutes a day
     protected static final int[] NUM = new int[]{
             /* 0 */ 6, /* 1 */ 2, /* 2 */ 5, /* 3 */ 5, /* 4 */ 4,
             /* 5 */ 5, /* 6 */ 6, /* 7 */ 3, /* 8 */ 7, /* 9 */ 6,
@@ -16,7 +16,7 @@ public class ClockTest {
         final Calendar calendar = Calendar.getInstance();
         int max = 0;
         String maxStr = "";
-        for (int i = 0; i < HAD; i++) {
+        for (int i = 0; i < MAD; i++) {
             calendar.add(Calendar.MINUTE, 1);
             final int hour = calendar.get(Calendar.HOUR);
             final int min = calendar.get(Calendar.MINUTE);
